@@ -135,6 +135,7 @@ footer h2 {
     font-size: 60px;
     align-items: center;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 .sorteados li {
@@ -146,6 +147,10 @@ footer h2 {
     border-radius: 50%;
     min-width: 100px;
     min-height: 100px;
+}
+
+.sorteados li:last-child{
+    background-color: yellow;
 }
 
 .painel {
