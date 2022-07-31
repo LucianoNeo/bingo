@@ -8,7 +8,7 @@ Desenvolvido com :
 - CSS
 - JAVASCRIPT
 
-Faz a marcação visual de todos os números na tela, diferenciando os que já foram sorteado, assim como a listagem dos últimos números sorteados.<br>
+Faz a marcação visual de todos os números na tela, diferenciando os que já foram sorteados, assim como a listagem dos últimos números.<br>
 
 
 *Responsivo para telas como o tamanho mínimo de 800x600.<br>
