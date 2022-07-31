@@ -48,6 +48,8 @@ function reiniciar() {
         for (let index = 1; index <= 75; index++) {
             document.getElementById(`${index}`).classList.remove('marcado')
         }
+        numeroSorteado.value = ''
+        numeroSorteado.focus()
     }
 }
 
@@ -60,16 +62,3 @@ numeroSorteado.addEventListener("keypress", function (event) {
         document.getElementById("selecionar").click();
     }
 });
-
-var elem = document.documentElement;
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}

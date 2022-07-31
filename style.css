@@ -10,13 +10,14 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    padding: 0 10px 0 10px;
 }
 
 header {
     font-size: 14px;
     color: #EEE;
     display: flex;
-    padding:10px 20px 0 ;
+    padding: 10px 20px 0;
     text-align: end;
     justify-content: flex-end;
     align-items: center;
@@ -31,7 +32,7 @@ header img {
 }
 
 main {
-    width: 100vw;
+    width: 98vw;
     height: 60vh;
     padding-top: 10px;
     display: flex;
@@ -49,7 +50,7 @@ main {
 }
 
 .bingo-letras {
-    width: 80px;
+    /* width: 80px; */
     height: 100%;
     font-size: 70px;
     display: flex;
@@ -71,7 +72,7 @@ main {
 }
 
 .fileiras {
-    width: 90vw;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +98,7 @@ main {
     cursor: pointer;
 }
 
-.fileiras li:hover{
+.fileiras li:hover {
     border: 2px solid red;
 }
 
@@ -127,7 +128,7 @@ footer h2 {
 
     display: flex;
     flex-direction: row-reverse;
-   justify-content: flex-end; 
+    justify-content: flex-end;
     height: 20vh;
     width: 70vw;
     list-style: none;
@@ -149,12 +150,12 @@ footer h2 {
     min-height: 100px;
 }
 
-.sorteados li:last-child{
+.sorteados li:last-child {
     background-color: yellow;
 }
 
 .painel {
-    
+
     background-color: black;
     display: flex;
     flex: 1;
@@ -179,9 +180,11 @@ button {
     font-weight: bold;
     cursor: pointer;
     border: none;
+    width: 100px;
+    text-align: center;
 }
 
-.botoes{
+.botoes {
     display: flex;
     gap: 10px;
 }
@@ -196,9 +199,18 @@ button {
 
 @media (max-width: 800px) {
 
-    main{
-        width: fit-content;
+    button {
+        width: 90px;
     }
+
+    .selecionar {
+        padding: 5px;
+    }
+
+    main {
+        width: 98vw;
+    }
+
     .fileiras {
         width: 85vw;
         font-size: 15px;
@@ -214,22 +226,24 @@ button {
     }
 
     .painel input {
-    font-size: 40px;
-    width: 120px;
-    text-align: center;
-}
+        font-size: 40px;
+        width: 120px;
+        text-align: center;
+    }
 }
 
 @keyframes seleciona {
     0% {
         transform: scale(1);
-        
+
     }
-    50%{
+
+    50% {
         transform: scale(2);
     }
+
     100% {
         transform: scale(1);
-        
+
     }
 }
