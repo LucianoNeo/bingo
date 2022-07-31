@@ -45,7 +45,7 @@ function reiniciar() {
     if (confirm('Iniciar nova rodada?')) {
         listaSorteados = []
         sorteados.innerHTML = ''
-        for (let index = 1; index < 75; index++) {
+        for (let index = 1; index <= 75; index++) {
             document.getElementById(`${index}`).classList.remove('marcado')
         }
     }
