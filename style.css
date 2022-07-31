@@ -134,6 +134,7 @@ footer h2 {
     gap: 20px;
     font-size: 60px;
     align-items: center;
+    overflow: hidden;
 }
 
 .sorteados li {
