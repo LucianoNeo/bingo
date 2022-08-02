@@ -1,0 +1,65 @@
+{
+  "name": "bingo-facil",
+  "version": "1.0.0",
+  "description": "Sistema para marcação de números sorteados durante o jogo bingo.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoNeo/bingo.git"
+  },
+  "keywords": [
+    "bingo",
+    "igreja",
+    "sorteio"
+  ],
+  "author": "LucianoNeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoNeo/bingo/issues"
+  },
+  "homepage": "https://github.com/LucianoNeo/bingo#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.65",
+    "@electron-forge/maker-deb": "^6.0.0-beta.65",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.65",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.65",
+    "@electron-forge/maker-zip": "^6.0.0-beta.65",
+    "electron": "^20.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "bingo_facil"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
